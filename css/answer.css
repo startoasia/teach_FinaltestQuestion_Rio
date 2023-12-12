@@ -1,4 +1,3 @@
-
 .wrap {
     max-width: 1000px;
     margin: 0 auto;
@@ -10,8 +9,47 @@
     margin: 0 auto;
 }
 
+.topShow {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 5%;
+    right: 5%;
+    z-index: 1;
+}
+
+.topBtn {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #000;
+    position: relative;
+}
+
+.topBtn::before {
+    content: 'top';
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+}
+
+.topBtn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    width: 70%;
+    height: 5px;
+    background-color: #fff;
+}
+
 /* 導覽列 */
-nav{
+nav {
     max-width: 1000px;
     margin: 0 auto;
     background-color: skyblue;
@@ -19,14 +57,17 @@ nav{
     top: 0;
     z-index: 10;
 }
-.navList{
+
+.navList {
     display: flex;
 }
-.navItem{
+
+.navItem {
     width: 33.333%;
     text-align: center;
 }
-.navLink{
+
+.navLink {
     font-size: 1.5rem;
 }
 
