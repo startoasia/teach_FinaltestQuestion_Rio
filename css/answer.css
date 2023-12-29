@@ -88,6 +88,13 @@ nav {
     mask-size: contain;
 }
 
+.thing01-2 {
+    width: 58.9%;
+    right: 5%;
+    top: 5.5%;
+    animation: rotate 2s infinite steps(3);
+    mix-blend-mode: screen;
+}
 .thing02-1 {
     width: 45.1%;
     left: 15%;
